@@ -1,10 +1,12 @@
-/*@import 'core/variables';
+@import 'core/variables';
 @import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
+
+@import 'layout/main_landing';
 @import 'layout/footer';
-@import 'pages/index';
-*/
+
+@import 'layout/header';
+@import 'layout/main_preview';
+
+@import 'layout/section_preview';
+@import 'layout/section_form';
 
