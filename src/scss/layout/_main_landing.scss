@@ -1,0 +1,70 @@
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    background-color: var(--landingBackground);
+
+    &__logo{
+        width: 250px;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title{
+            font-family: 'Merriweather', serif;
+            font-weight: bold;
+            font-size: 19.2px;
+            color: var(--orangeMain);
+            line-height: normal;
+        }
+
+        &--paragraph{
+            font-family: 'OpenSans', sans-serif;
+            font-size: 12.8px;
+            color: #114e4e;
+            max-width: 260px;
+            text-align: center;
+            line-height: normal;
+        }
+    }
+
+    &__icons{
+        border: 1.6px solid var(--orangeMain);
+        border-radius: 4px;
+        width: 268px;
+        height: 73.8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        &--block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--item{
+            font-size: 22.4px;
+            color: var(--orangeMain);
+        }
+
+        &--text{
+            font-family: var(--mainFont);
+            font-size: 12.8px;
+            color: #54585a;
+            line-height: normal;
+            text-align: center;
+        }
+    }
+}
+
