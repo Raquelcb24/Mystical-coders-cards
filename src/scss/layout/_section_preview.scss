@@ -1,0 +1,114 @@
+.preview{
+    background-color: #bfcdd0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__button{
+        
+        border: 1px solid white;
+        background-color: #bfcdd0;
+        font-size: 12px;
+        margin-right: 170px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 29px;
+        padding-right: 12px;
+        border-radius: 25px;
+        font-family: var(--mainFont);
+        color: #54585a;
+        
+
+        &--trash{
+        }
+        &--reset{
+            
+        }
+
+        
+    }
+
+    &__card{
+        height: 330px;
+        width: 245px;
+        margin-top: 20px;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 250px;
+        padding-right: 20px;
+        border-left: 5px solid #438792;
+        
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,.2);
+
+        &--text{
+            font-family: var(--previewFont);
+            line-height: 1.5;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            
+                      
+            &-name{
+                font-size: 18px;
+                font-weight: bold;
+                color: #114e4e;
+            }
+            &-front{
+                font-size: 16px;
+                font-weight: 550;
+                color: #54585a;
+            }
+           
+        }
+
+        &--img{
+           margin-left: 0;
+        }
+            
+        &--socialmedia{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+            margin: 10px;
+            gap: 15px;
+
+            
+
+            &-phone{
+                border: 2px solid #a2deaf;
+                border-radius: 100%;
+                padding: 5px;
+                text-decoration: none;
+                color: #114e4e;
+                
+            }
+            &-mail{
+                border: 2px solid #a2deaf;
+                border-radius: 100%;
+                padding: 5px;
+                text-decoration: none;
+                color: #114e4e;
+            }
+            &-linkedin{
+                border: 2px solid #a2deaf;
+                border-radius: 100%;
+                padding: 5px;
+                text-decoration: none;
+                color: #114e4e;
+            }
+            &-github{
+                border: 2px solid #a2deaf;
+                border-radius: 100%;
+                padding: 5px;
+                text-decoration: none;
+                color: #114e4e;
+            }
+        }
+    }
+}
+
