@@ -14,8 +14,8 @@
         margin-right: 170px;
         padding-top: 6px;
         padding-bottom: 6px;
-        padding-left: 29px;
-        padding-right: 12px;
+        padding-left: 7px;
+        padding-right: 12px; 
         border-radius: 25px;
         font-family: var(--mainFont);
         color: #54585a;
@@ -26,14 +26,13 @@
     }
 
     &__card{
-        height: 330px;
-        width: 245px;
+        height: 380px;
+        width: 240px;
         margin-top: 20px;
         background-color: white;
         padding-top: 20px;
         padding-bottom: 250px;
         padding-right: 20px;
-        border-left: 5px solid #438792;
         
         display: flex;
         flex-direction: column;
@@ -43,7 +42,9 @@
             font-family: var(--previewFont);
             line-height: 1.5;
             padding-left: 20px;
-            padding-bottom: 10px;
+            
+            margin-bottom: 10px;
+            border-left: 5px solid #438792;
             
                       
             &-name{
@@ -61,6 +62,9 @@
 
         &--img{
            margin-left: 0;
+           width: 100vw;
+           padding-bottom: 10px;
+
         }
             
         &--socialmedia{
@@ -69,37 +73,42 @@
             align-items: center;
             height: 32px;
             width: 32px;
+            padding-left: 15px;
+            
             margin: 10px;
-            gap: 15px;
-
+            gap: 8px;
+           
+            
             
 
             &-phone{
                 border: 2px solid #a2deaf;
                 border-radius: 100%;
-                padding: 5px;
+                padding: 7px 10px;
                 text-decoration: none;
                 color: #114e4e;
+                
+                
                 
             }
             &-mail{
                 border: 2px solid #a2deaf;
                 border-radius: 100%;
-                padding: 5px;
+                padding: 7px 9px;
                 text-decoration: none;
                 color: #114e4e;
             }
             &-linkedin{
                 border: 2px solid #a2deaf;
                 border-radius: 100%;
-                padding: 5px;
+                padding: 7px 10px;
                 text-decoration: none;
                 color: #114e4e;
             }
             &-github{
                 border: 2px solid #a2deaf;
                 border-radius: 100%;
-                padding: 5px;
+                padding: 7px 10px;
                 text-decoration: none;
                 color: #114e4e;
             }
