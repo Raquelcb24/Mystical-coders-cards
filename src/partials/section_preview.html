@@ -1,12 +1,45 @@
 <section class="preview">
-    <button>RESET</button>
-    <h2>Nombre Apellido</h2>
-    <p>Front-end developer</p>
-    <img src="" alt="">
-    <div>
-        <a href="#">phone</a>
-        <a href="#">mail</a>
-        <a href="#">linkedin</a>
-        <a href="#">github</a>
+    <button type="reset" class="preview__button">
+        <span class="preview__button--trash">
+            <i class="fa-regular fa-trash-can"></i>
+        </span>
+        <span class="preview__button--reset">RESET</span>
+    </button>
+    <div class="preview__card">
+        <div class="preview__card--text">
+            <h2 class="preview__card--text-name">Nombre Apellido</h2>
+            <p class="preview__card--text-front">Front-end developer</p>
+            
+        </div>
+        
+        <div class="preview__card--img">
+            <img src="https://via.placeholder.com/240x200" alt="imagen perfil">
+        </div>
+        
+        <ul class="preview__card--socialmedia">
+            <li>
+                <a class="preview__card--socialmedia-phone" href="#">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </a> 
+            </li>
+            <li>
+                <a class="preview__card--socialmedia-mail" href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                </a> 
+            </li>
+            <li>
+                <a class="preview__card--socialmedia-linkedin" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a class="preview__card--socialmedia-github" href="#">
+                    <i class="fa-brands fa-github-alt"></i>
+                </a>
+            </li>
+            
+           
+            
+        </ul>
     </div>
 </section>
