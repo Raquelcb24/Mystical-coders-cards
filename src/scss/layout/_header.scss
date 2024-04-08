@@ -1,0 +1,16 @@
+.header {
+  width: 320px;
+  height: 111px;
+  padding: 30px 79px 38px 40px;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid grey;
+  background-image: url(../images/logo-awesome-profile-cards.svg);
+
+  &_image {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+  }
+}
