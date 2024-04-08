@@ -8,9 +8,9 @@
     font-family: var(--mainFont);
     padding-left: 2rem;
     padding-right: 2rem;
-
     @media screen and (min-width:768px){
-       /*  width: 50vw; */
+       width: 50vw;
+
     }
 }
 .form__fieldset--design{
@@ -22,12 +22,13 @@
 
 }
 .form__fieldset--title{
-    width: calc(100vw - 4rem);
+    /*width: calc(100vw - 4rem);*/
     font-size: 1.8rem;
     font-weight: 600;
     padding-top: 1rem;
     color: var(--fontColor);
 }
+
 
 .fa-object-ungroup{
     padding-right: 1rem;
@@ -42,8 +43,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 2.5rem;
-
-   
 
 }
 .design{

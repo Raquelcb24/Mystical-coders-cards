@@ -8,6 +8,7 @@
         &__preview{
             grid-column: 2/3;
             grid-row: 1/2;
+            background-color:linear-gradient(to bottom, var(--landingBackground), white 9%);
            
         }
         &__form{
@@ -17,4 +18,14 @@
         
     }
 
+}
+
+@media screen and (min-width: 1024px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        &__preview{
+            grid-column: 2/4;
+        }
+    }
 }
