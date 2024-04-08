@@ -8,12 +8,18 @@
     font-family: var(--mainFont);
     padding-left: 2rem;
     padding-right: 2rem;
+
+    @media screen and (min-width:768px){
+       /*  width: 50vw; */
+    }
 }
 .form__fieldset--design{
     margin-top: 2.7rem;
     padding-bottom: 3rem;
     border-bottom: 0.2rem solid #d8d8d8;
     color: var(--fontColor); 
+
+
 }
 .form__fieldset--title{
     width: calc(100vw - 4rem);
@@ -37,10 +43,16 @@
     grid-template-columns: 1fr 1fr;
     padding-bottom: 2.5rem;
 
+   
+
 }
 .design{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    /* @media screen and (min-width:768px){
+        grid-template-columns: 1fr;
+    } */
     &__title{
         font-size: 1.4rem;
         padding-left: 1rem;
