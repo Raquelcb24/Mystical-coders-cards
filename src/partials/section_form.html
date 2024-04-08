@@ -1,0 +1,146 @@
+<section class="form__section">
+    <form class="form">
+
+        <fieldset class="form__fieldset--design">
+            <legend class="form__fieldset--title"><i class="fas fa-object-ungroup" style="color: #e17334;"></i>DISEÑA <i class="fa-regular fa-chevron-up"></i></legend>
+            
+            <div class="design">
+                <label class="design__title">COLORES</label>
+                <div class="design__options">
+                        <div class="radio__option">
+                                <input 
+                                type="radio" 
+                                id="greenPalette" 
+                                name="palette"
+                                class="radio__check"
+                                value="greenPalette"
+                                />
+                                <label for="greenPalette">
+                                    <div class="color">
+                                        <div class="box color__deep--green"></div>
+                                        <div class="box color__medium--green" ></div>
+                                        <div class="box color__light--green"></div>
+                                    </div>
+                                </label>
+                        </div>
+
+                        <div class="radio__option">
+                            <input 
+                            type="radio" 
+                            id="redPalette" 
+                            name="palette"
+                            class="radio__check"
+                            value="redPalette"
+                            />
+                            <label for="redPalette">
+                                <div class="color">
+                                    <div class="box color__deep--red"></div>
+                                    <div class="box color__medium--red" ></div>
+                                    <div class="box color__light--red"></div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="radio__option">
+                                <input 
+                                type="radio" 
+                                id="yellowPalette" 
+                                name="palette"
+                                class="radio__check"
+                                value="yellowPalete"
+                                />
+                                <label for="yellowPalete">
+                                    <div class="color">
+                                        <div class="box color__deep--grey"></div>
+                                        <div class="box color__yellow" ></div>
+                                        <div class="box color__light--grey"></div>
+                                    </div>
+                                </label>
+                        </div>
+                </div>
+            </div>
+        </fieldset>
+            
+
+        <fieldset class="form__fieldset--fill">
+            <legend class="form__fieldset--title"><i class="fa-solid fa-keyboard" style="color: #e17334;"></i>RELLENA<i class="fa-regular fa-chevron-up"></i></legend>
+
+            <label for="completeName" class="form__label">Nombre completo</label>
+            <input 
+            type="text"
+            id="completeName"
+            name="data"
+            placeholder="Ej. Sally Jill"
+            class="form__input">
+            
+            <label for="position" class="form__label">Puesto</label>
+            <input 
+            type="text"
+            id="position"
+            name="data"
+            placeholder="Ej.Front-end unicorn"
+            class="form__input">
+
+         
+
+            <label for="profileImage" class="form__label" >Imagen de perfil</label>
+            <div class="image__box">
+            <input 
+            type="submit"
+            value="Añadir imagen"
+            id="profileImage"
+            name="data"
+            class="image__button">
+            
+            <div class="image__check"></div>
+           </div>
+
+            <label for="email" class="form__label">Email</label>
+            <input 
+            type="email"
+            id="email"
+            name="data"
+            placeholder="Ej. sally-hill@gmail.com"
+            class="form__input">
+
+            <label for="phoneNumber" class="form__label" >Teléfono</label>
+            <input 
+            type="tel"
+            id="phoneNumber"
+            name="data"
+            placeholder="Ej. 5555-55-55-55"
+            class="form__input">
+
+            <label for="linkedin" class="form__label">LinkedIn</label>
+            <input 
+            type="text"
+            id="linkedin"
+            name="data"
+            placeholder="Ej. linkedin.com/in/sally.hill"
+            class="form__input">
+
+            <label for="github" class="form__label">GitHub</label>
+            <input 
+            type="text"
+            id="github"
+            name="data"
+            placeholder="Ej.@sally-hill"
+            class="form__input">
+
+        </fieldset>
+
+        <fieldset class="form__fieldset--share">
+            <legend class="form__fieldset--title"><i class="fa-solid fa-share-nodes" style="color: #e17334;"></i>COMPARTE <i class="fa-regular fa-chevron-up"></i></legend>
+            <input 
+            type="submit"
+            value="CREAR TARJETA"
+            id="shareButton"
+            name="create"
+            class="share__button">
+        </fieldset>
+
+    </form>
+
+
+
+</section>
