@@ -2,7 +2,13 @@
     <form class="form">
 
         <fieldset class="form__fieldset--design">
-            <legend class="form__fieldset--title"><i class="fas fa-object-ungroup" style="color: #e17334;"></i>DISEÑA <i class="fa-regular fa-chevron-up"></i></legend>
+            <legend class="form__fieldset--title">
+                <div class="caret__postion">
+                  <div>
+                    <i class="fas fa-object-ungroup" style="color: #e17334;"></i>DISEÑA</legend>
+                  </div>
+                  <i class="fa-solid fa-caret-up"></i>
+               </div>
             
             <div class="design">
                 <label class="design__title">COLORES</label>
@@ -63,7 +69,14 @@
             
 
         <fieldset class="form__fieldset--fill">
-            <legend class="form__fieldset--title"><i class="fa-solid fa-keyboard" style="color: #e17334;"></i>RELLENA<i class="fa-regular fa-chevron-up"></i></legend>
+            <legend class="form__fieldset--title">
+                <div class="caret__postion">
+                    <div>
+                      <i class="fa-solid fa-keyboard" style="color: #e17334;"></i>RELLENA</legend>
+                    </div>
+                    <i class="fa-solid fa-caret-up"></i>
+                 </div>
+            </legend>
 
             <label for="completeName" class="form__label">Nombre completo</label>
             <input 
@@ -85,8 +98,9 @@
 
             <label for="profileImage" class="form__label" >Imagen de perfil</label>
             <div class="image__box">
+            <label class="image__add" for="profileImage">Añadir imagen</label>
             <input 
-            type="submit"
+            type="file"
             value="Añadir imagen"
             id="profileImage"
             name="data"
@@ -130,7 +144,14 @@
         </fieldset>
 
         <fieldset class="form__fieldset--share">
-            <legend class="form__fieldset--title"><i class="fa-solid fa-share-nodes" style="color: #e17334;"></i>COMPARTE <i class="fa-regular fa-chevron-up"></i></legend>
+            <legend class="form__fieldset--title">
+                <div class="caret__postion">
+                    <div>
+                      <i class="fa-solid fa-share-nodes" style="color: #e17334;"></i>COMPARTE</legend>
+                    </div>
+                    <i class="fa-solid fa-caret-up"></i>
+                 </div>
+            </legend>
             <input 
             type="submit"
             value="CREAR TARJETA"

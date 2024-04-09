@@ -8,35 +8,54 @@
     font-family: var(--mainFont);
     padding-left: 2rem;
     padding-right: 2rem;
+    @media screen and (min-width:768px){
+       width: 50vw;
+
+    }
 }
 .form__fieldset--design{
     margin-top: 2.7rem;
     padding-bottom: 3rem;
     border-bottom: 0.2rem solid #d8d8d8;
     color: var(--fontColor); 
+
+
 }
 .form__fieldset--title{
+    /*width: calc(100vw - 4rem);*/
     font-size: 1.8rem;
     font-weight: 600;
     padding-top: 1rem;
     color: var(--fontColor);
-    padding-bottom: 2.5rem;
 }
+
 
 .fa-object-ungroup{
     padding-right: 1rem;
 }
-.fa-chevron-up{
+.fa-caret-up{
     font-size: 1.8rem;
-    padding-left: 8rem;
+    color: #54585a;
+    text-align: right;
+}
+
+.caret__postion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2.5rem;
 
 }
 .design{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    /* @media screen and (min-width:768px){
+        grid-template-columns: 1fr;
+    } */
     &__title{
         font-size: 1.4rem;
-        margin-left: 1.9rem;
+        padding-left: 1rem;
+        font-weight: 400;
     }
     &__options{
         display: grid;
@@ -105,9 +124,11 @@
     border: 0.1rem solid #a2deaf;
     height: 3rem;
     margin-bottom: 2rem;
+    font-family: var(--mainFont);
+    font-size: 1.4rem;
     &::placeholder{
         color: #c5c5c5;
-        opacity: 80%;
+        opacity: 80%
     }
 }
 
@@ -132,13 +153,24 @@
     margin-bottom: 2.7rem;
 
 }
-.image__button{
+.image__add{
     width: 14rem;
     height: 3rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: var(--mainFont);
+    text-align: center;
+    padding-top: 0.3rem;
     background-color: var(--orangeMain);
     border-radius: 0.3rem;
     border: 0.1rem solid var(--orangeMain);
     color: white;
+
+  }
+
+.image__button{
+    display: none;
+    
 
 }
 .image__check{
@@ -165,7 +197,7 @@
     border: 0.1rem solid var(--orangeMain);
     border-radius:1.2rem;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
 }
 .fa-share-nodes{
     padding-right: 1rem;
