@@ -10,15 +10,22 @@
     padding-right: 2rem;
     @media screen and (min-width:768px){
        width: 50vw;
+       align-items: stretch;
+       padding-right: 3rem;
+       padding-left: 4rem;
 
-    }
+    }@media screen and (min-width:1024px){
+        width: 40vw;
+     }
 }
 .form__fieldset--design{
     margin-top: 2.7rem;
     padding-bottom: 3rem;
     border-bottom: 0.2rem solid #d8d8d8;
     color: var(--fontColor); 
-
+    @media screen and (min-width: 768px){
+        width: 100%;
+    }
 
 }
 .form__fieldset--title{
@@ -27,8 +34,10 @@
     font-weight: 600;
     padding-top: 1rem;
     color: var(--fontColor);
+    @media screen and (min-width: 768px){
+        width: 100%;
+    }
 }
-
 
 .fa-object-ungroup{
     padding-right: 1rem;
