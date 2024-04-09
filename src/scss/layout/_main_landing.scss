@@ -3,26 +3,26 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--landingBackground);
-    padding-top: 95px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 30px;
+    padding-top: 9.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-bottom: 3rem;
 
     @media screen and (width > 768px) {
-        padding-top: 350px;
-        padding-left: 174px;
-        padding-right: 174px;
-        padding-bottom: 59px;
+        padding-top: 35rem;
+        padding-left: 17.4rem;
+        padding-right: 17.4rem;
+        padding-bottom: 5.9rem;
 
     }
 
     &__logo{
-        width: 250px;
-        padding-bottom: 35px;
+        width: 25rem;
+        padding-bottom: 3.5rem;
 
         @media screen and (width > 768px) {
-            width: 419px;
-            padding-bottom: 31px;
+            width: 41.9rem;
+            padding-bottom: 3.1rem;
         }
     }
 
@@ -34,100 +34,100 @@
         &--title{
             font-family: 'Merriweather', serif;
             font-weight: bold;
-            font-size: 19.2px;
+            font-size: 1.92rem;
             color: var(--orangeMain);
             line-height: normal;
 
             @media screen and (width > 768px) {
-                font-size: 24px;
+                font-size: 2.4rem;
             }
         }
 
         &--paragraph{
             font-family: 'OpenSans', sans-serif;
-            font-size: 12.8px;
+            font-size: 1.28rem;
             color: #114e4e;
-            max-width: 260px;
+            max-width: 26rem;
             text-align: center;
             line-height: normal;
 
             @media screen and (width > 768px) {
-                font-size: 16px;
-                max-width: 330px;
+                font-size: 1.6rem;
+                max-width: 33rem;
             }
         }
     }
 
     &__icons{
-        border: 1.6px solid rgba(225, 115, 52, 0.21);
-        border-radius: 4px;
-        width: 268px;
-        height: 73.8px;
+        border: 0.16rem solid rgba(225, 115, 52, 0.21);
+        border-radius: 0.4rem;
+        width: 26.8rem;
+        height: 7.38rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 24px;
+        gap: 2.4rem;
         align-items: center;
-        padding-top: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        margin-top: 17.8px;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        margin-top: 1.78rem;
 
         @media screen and (width > 768px) {
-            width: 325px;
-            height: 86px;
-            margin-top: 27px;
+            width: 32.5rem;
+            height: 8.6rem;
+            margin-top: 2.7rem;
         }
 
         &--block{
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 60px;
+            width: 6rem;
 
             @media screen and (width > 768px) {
-                width: 75px;
+                width: 7.5rem;
             }
         }
 
         &--item{
-            font-size: 22.4px;
+            font-size: 2.24rem;
             color: var(--orangeMain);
 
             @media screen and (width > 768px) {
-                font-size: 28px;
+                font-size: 2.8rem;
             }
         }
 
         &--text{
             font-family: var(--mainFont);
-            font-size: 12.8px;
+            font-size: 1.28rem;
             color: #54585a;
             line-height: normal;
             text-align: center;
 
             @media screen and (width > 768px) {
-                font-size: 16px;
+                font-size: 1.6rem;
             }
         }
     }
 
     &__btn{
-        margin-top: 38.6px;
+        margin-top: 3.86rem;
         text-decoration: none;
         background-color: #438792;
-        width: 129px;
-        height: 42px;
-        border-radius: 21px;
+        width: 12.9rem;
+        height: 4.2rem;
+        border-radius: 2.1rem;
         font-family: var(--mainFont);
-        font-size: 16px;
+        font-size: 1.6rem;
         color: #fff;
         text-align: center;
-        line-height: 42px;
+        line-height: 4.2rem;
 
         @media screen and (width > 768px) {
-            margin-top: 186px;
+            margin-top: 18.6rem;
             
         }
     }
