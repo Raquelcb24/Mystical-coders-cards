@@ -16,10 +16,10 @@
                         <div class="radio__option">
                                 <input 
                                 type="radio" 
-                                id="greenPalette" 
+                                id="palette" 
                                 name="palette"
                                 class="radio__check"
-                                value="greenPalette"
+                                value=1
                                 />
                                 <label for="greenPalette">
                                     <div class="color">
@@ -33,10 +33,10 @@
                         <div class="radio__option">
                             <input 
                             type="radio" 
-                            id="redPalette" 
+                            id="palette" 
                             name="palette"
-                            class="radio__check"
-                            value="redPalette"
+                            class="radio__check js_red"
+                            value=2
                             />
                             <label for="redPalette">
                                 <div class="color">
@@ -50,10 +50,10 @@
                         <div class="radio__option">
                                 <input 
                                 type="radio" 
-                                id="yellowPalette" 
+                                id="palette" 
                                 name="palette"
                                 class="radio__check"
-                                value="yellowPalete"
+                                value=3
                                 />
                                 <label for="yellowPalete">
                                     <div class="color">
@@ -81,7 +81,7 @@
             <label for="completeName" class="form__label">Nombre completo</label>
             <input 
             type="text"
-            id="completeName"
+            id="name"
             name="data"
             placeholder="Ej. Sally Jill"
             class="form__input">
@@ -89,7 +89,7 @@
             <label for="position" class="form__label">Puesto</label>
             <input 
             type="text"
-            id="position"
+            id="job"
             name="data"
             placeholder="Ej.Front-end unicorn"
             class="form__input">
@@ -102,7 +102,7 @@
                 <input 
                 type="file"
                 value="Añadir imagen"
-                id="profileImage"
+                id="photo"
                 name="data"
                 class="image__button js__profile-upload-btn">
                 
@@ -120,7 +120,7 @@
             <label for="phoneNumber" class="form__label" >Teléfono</label>
             <input 
             type="tel"
-            id="phoneNumber"
+            id="phone"
             name="data"
             placeholder="Ej. 5555-55-55-55"
             class="form__input">
