@@ -73,20 +73,29 @@ form.addEventListener("input", handleForm);
 
 function handleReset(event){
   event.preventDefault();
-  const formName = document.querySelector(".js_form-name");
-  formName.value = "";
-  console.log(formName);
-  const formJob =document.querySelector(".js_form-job");
-  formJob.value="";
-  const formEmail = document.querySelector(".js_form-email");
-  formEmail.value = "";
-  const formPhone = document.querySelector(".js_form-phone");
-  formPhone.value="";
-  const formLinkedin = document.querySelector(".js_form-linkedin");
-  formLinkedin.value="";
-  const formGitHub = document.querySelector(".js_form-github");
-  formGitHub.value="";
-}
+  const fieldset = document.querySelector('.js-fill');
+  const inputs = fieldset.querySelectorAll('input');
+  for (const input of inputs) {
+      input.value = '';
+      previewName.innerHTML = 'Nombre Apellido';
+      previewJob.innerHTML = 'Frontend developer';
+    }
+  }
+
+//   const formName = document.querySelector(".js_form-name");
+//   formName.value = "";
+//   console.log(formName);
+//   const formJob =document.querySelector(".js_form-job");
+//   formJob.value="";
+//   const formEmail = document.querySelector(".js_form-email");
+//   formEmail.value = "";
+//   const formPhone = document.querySelector(".js_form-phone");
+//   formPhone.value="";
+//   const formLinkedin = document.querySelector(".js_form-linkedin");
+//   formLinkedin.value="";
+//   const formGitHub = document.querySelector(".js_form-github");
+//   formGitHub.value="";
+// }
  
 btnReset.addEventListener('click', handleReset);
 
