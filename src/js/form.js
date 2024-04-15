@@ -6,6 +6,9 @@ const previewPhone = document.querySelector(".js_phone");
 const previewLinkedin = document.querySelector(".js_linkedin");
 const previewGithub = document.querySelector(".js_github");
 const previewColorRed = document.querySelector(".js_red");
+const previewCard = document.querySelector(".js_preview-card");
+const btnReset = document.querySelector(".js_button-reset");
+
 
 const data = {
   palette: "",
@@ -17,6 +20,7 @@ const data = {
   github: "",
   photo: "",
 };
+
 
 const handleForm = (event) => {
   event.preventDefault();
@@ -45,11 +49,38 @@ const handleForm = (event) => {
     // data.github = valueInput;
     previewGithub.href = valueInput;
   } else if (input === "palette") {
-    if (valueInput === 2) {
-      previewName.classList.add("red");
+    if (valueInput === "2") {
+      previewCard.classList.add("palette2");
+      previewCard.classList.remove("palette1");
+      previewCard.classList.remove("palette3");
     }
-  }
+    if (valueInput === "3") {
+      previewCard.classList.add("palette3");
+      previewCard.classList.remove("palette1");
+      previewCard.classList.remove("palette2");
+    } 
+    if (valueInput === "1"){
+      previewCard.classList.add("palette1");
+      previewCard.classList.remove("palette3");
+      previewCard.classList.remove("palette2");
+    }
+    }
 
   console.log(data);
 };
+
 form.addEventListener("input", handleForm);
+
+
+
+function handleReset(event){
+  event.preventDefault();
+  
+  console.log(data);
+ }
+ 
+btnReset.addEventListener('click', handleReset);
+
+
+
+

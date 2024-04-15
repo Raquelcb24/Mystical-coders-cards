@@ -19,7 +19,7 @@
                                 id="palette" 
                                 name="palette"
                                 class="radio__check"
-                                value=1
+                                value="1"
                                 />
                                 <label for="greenPalette">
                                     <div class="color">
@@ -36,7 +36,7 @@
                             id="palette" 
                             name="palette"
                             class="radio__check js_red"
-                            value=2
+                            value="2"
                             />
                             <label for="redPalette">
                                 <div class="color">
@@ -53,7 +53,7 @@
                                 id="palette" 
                                 name="palette"
                                 class="radio__check"
-                                value=3
+                                value="3"
                                 />
                                 <label for="yellowPalete">
                                     <div class="color">
@@ -78,11 +78,12 @@
                  </div>
             </legend>
 
-            <label for="completeName" class="form__label">Nombre completo</label>
+            <label for="completeName" class="form__label ">Nombre completo</label>
             <input 
             type="text"
             id="name"
-            name="data"
+            name="name"
+            maxlength="30"
             placeholder="Ej. Sally Jill"
             class="form__input">
             
@@ -90,7 +91,8 @@
             <input 
             type="text"
             id="job"
-            name="data"
+            name="job"
+            maxlength="30"
             placeholder="Ej.Front-end unicorn"
             class="form__input">
 
@@ -103,7 +105,7 @@
                 type="file"
                 value="Añadir imagen"
                 id="photo"
-                name="data"
+                name="photo"
                 class="image__button js__profile-upload-btn">
                 
                 <div class="image__check js__profile-image"></div>
@@ -113,7 +115,8 @@
             <input 
             type="email"
             id="email"
-            name="data"
+            name="email"
+            pattern="/^[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7}$/"
             placeholder="Ej. sally-hill@gmail.com"
             class="form__input">
 
@@ -121,7 +124,9 @@
             <input 
             type="tel"
             id="phone"
-            name="data"
+            name="phone"
+            pattern="/^\+?(\d{1,3})?[-. ]?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/"
+            maxlength="15"
             placeholder="Ej. 5555-55-55-55"
             class="form__input">
 
@@ -129,7 +134,8 @@
             <input 
             type="text"
             id="linkedin"
-            name="data"
+            name="linkedin"
+            pattern="/^https?:\/\/(www\.)?linkedin\.com\/(in|pub)\/[a-zA-Z0-9_-]+\/?$/"
             placeholder="Ej. linkedin.com/in/sally.hill"
             class="form__input">
 
@@ -137,7 +143,8 @@
             <input 
             type="text"
             id="github"
-            name="data"
+            name="github"
+            pattern="/^https?:\/\/(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?$/"
             placeholder="Ej.github.com/sallyhill"
             class="form__input">
 
@@ -156,7 +163,7 @@
             type="submit"
             value="CREAR TARJETA"
             id="shareButton"
-            name="create"
+            name="shareButton"
             class="share__button">
         </fieldset>
 

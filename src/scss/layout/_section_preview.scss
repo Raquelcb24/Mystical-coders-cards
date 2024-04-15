@@ -49,12 +49,12 @@
       line-height: 1.5;
       padding-left: 2rem;
       margin-bottom: 1rem;
-      border-left: 0.5rem solid #438792;
+      
 
       &-name {
         font-size: 1.8rem;
         font-weight: bold;
-        color: #114e4e;
+        
       }
       &-front {
         font-size: 1.6rem;
@@ -87,42 +87,123 @@
       gap: 1rem;
 
       &-phone {
-        border: 0.2rem solid #a2deaf;
+        
         border-radius: 100%;
         padding: 0.7rem 1rem;
         text-decoration: none;
-        color: #114e4e;
+       
         font-size: 1.8rem;
       }
       &-mail {
-        border: 0.2rem solid #a2deaf;
+        
         border-radius: 100%;
         padding: 0.7rem 0.9rem;
         text-decoration: none;
-        color: #114e4e;
+        
         font-size: 1.8rem;
       }
       &-linkedin {
-        border: 0.2rem solid #a2deaf;
+        
         border-radius: 100%;
         padding: 0.7rem 1rem;
         text-decoration: none;
-        color: #114e4e;
+        
         font-size: 1.8rem;
       }
       &-github {
-        border: 0.2rem solid #a2deaf;
+        
         border-radius: 100%;
         padding: 0.7rem 1rem;
         text-decoration: none;
-        color: #114e4e;
+        
         font-size: 1.8rem;
       }
     }
   }
 }
 
-.red {
-  background-color: red;
-  color: red;
+
+
+.palette1{
+  .preview__card--text-name{
+    color: #114e4e;
+  }
+  .preview__card--text{
+    border-left: 0.5rem solid #438792;
+   
+  }
+  .preview__card--socialmedia-phone{
+    border: 0.2rem solid #a2deaf;
+    color: #114e4e;
+  }
+  .preview__card--socialmedia-mail{
+    border: 0.2rem solid #a2deaf;
+    color: #114e4e;
+  }
+  .preview__card--socialmedia-linkedin{
+    border: 0.2rem solid #a2deaf;
+    color: #114e4e;
+  }
+  .preview__card--socialmedia-github{
+    border: 0.2rem solid #a2deaf;
+    color: #114e4e;
+  }
 }
+
+.palette2{
+  .preview__card--text-name{
+    color: #420101;
+  }
+  .preview__card--text{
+    border-left: 0.5rem solid #bd1010;
+   
+  }
+  .preview__card--socialmedia-phone{
+    border: 0.2rem solid #e95626;
+    color: #420101;
+  }
+  .preview__card--socialmedia-mail{
+    border: 0.2rem solid #e95626;
+    color: #420101;
+  }
+  .preview__card--socialmedia-linkedin{
+    border: 0.2rem solid #e95626;
+    color: #420101;
+  }
+  .preview__card--socialmedia-github{
+    border: 0.2rem solid #e95626;
+    color: #420101;
+  }
+
+}
+.palette3{
+  .preview__card--text-name{
+    color: #3e5b65;
+  }
+  .preview__card--text{
+    border-left: 0.5rem solid #eab052;
+   
+  }
+  .preview__card--socialmedia-phone{
+    border: 0.2rem solid #a0c0cf;
+    color: #3e5b65;
+  }
+  .preview__card--socialmedia-mail{
+    border: 0.2rem solid #a0c0cf;
+    color: #3e5b65;
+  }
+  .preview__card--socialmedia-linkedin{
+    border: 0.2rem solid #a0c0cf;
+    color: #3e5b65;
+  }
+  .preview__card--socialmedia-github{
+    border: 0.2rem solid #a0c0cf;
+    color: #3e5b65;
+  }
+
+
+    
+  
+}
+
+
