@@ -71,15 +71,26 @@ const handleForm = (event) => {
 
 form.addEventListener("input", handleForm);
 
-
-
 function handleReset(event){
   event.preventDefault();
-  
-  console.log(data);
- }
+  const formName = document.querySelector(".js_form-name");
+  formName.value = "";
+  console.log(formName);
+  const formJob =document.querySelector(".js_form-job");
+  formJob.value="";
+  const formEmail = document.querySelector(".js_form-email");
+  formEmail.value = "";
+  const formPhone = document.querySelector(".js_form-phone");
+  formPhone.value="";
+  const formLinkedin = document.querySelector(".js_form-linkedin");
+  formLinkedin.value="";
+  const formGitHub = document.querySelector(".js_form-github");
+  formGitHub.value="";
+}
  
 btnReset.addEventListener('click', handleReset);
+
+
 
 
 
