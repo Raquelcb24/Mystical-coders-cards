@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: var(--landingBackground);
     padding-top: 9.5rem;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
     padding-bottom: 3rem;
+    height: 90vh;
 
     @media screen and (width > 768px) {
         padding-top: 35rem;
@@ -127,7 +129,7 @@
         line-height: 4.2rem;
 
         @media screen and (width > 768px) {
-            margin-top: 18.6rem;
+            margin-bottom: 5.9rem;
             
         }
     }
