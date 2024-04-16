@@ -72,30 +72,22 @@ const handleForm = (event) => {
 form.addEventListener("input", handleForm);
 
 function handleReset(event){
+
   event.preventDefault();
   const fieldset = document.querySelector('.js-fill');
   const inputs = fieldset.querySelectorAll('input');
+  previewCard.classList.add("palette1");
+  previewCard.classList.remove("palette3");
+  previewCard.classList.remove("palette2");
+
   for (const input of inputs) {
       input.value = '';
+      data[input.id] = '';
       previewName.innerHTML = 'Nombre Apellido';
       previewJob.innerHTML = 'Frontend developer';
     }
-  }
-
-//   const formName = document.querySelector(".js_form-name");
-//   formName.value = "";
-//   console.log(formName);
-//   const formJob =document.querySelector(".js_form-job");
-//   formJob.value="";
-//   const formEmail = document.querySelector(".js_form-email");
-//   formEmail.value = "";
-//   const formPhone = document.querySelector(".js_form-phone");
-//   formPhone.value="";
-//   const formLinkedin = document.querySelector(".js_form-linkedin");
-//   formLinkedin.value="";
-//   const formGitHub = document.querySelector(".js_form-github");
-//   formGitHub.value="";
-// }
+    console.log(data);
+  };
  
 btnReset.addEventListener('click', handleReset);
 
