@@ -38,10 +38,10 @@ const handleForm = (event) => {
     previewJob.innerHTML = valueInput;
   } else if (input === "email") {
     // data.email = valueInput;
-    previewEmail.href = valueInput;
+    previewEmail.href = "mailto:" + valueInput;
   } else if (input === "phone") {
     // data.phoneNumber = valueInput;
-    previewPhone.href = valueInput;
+    previewPhone.href = "tel:" + valueInput;
   } else if (input === "linkedin") {
     // data.linkedin = valueInput;
     previewLinkedin.href = valueInput;
