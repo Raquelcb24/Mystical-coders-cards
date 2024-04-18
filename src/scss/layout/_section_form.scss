@@ -200,7 +200,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: 0.2rem solid #d8d8d8;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .share__button {
@@ -223,6 +223,52 @@
 .fa-share-nodes{
     padding-right: 1rem;
 }
+
+.form__fieldset--send{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.1rem solid #d8d8d8;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fieldset__send--title{
+    color: var(--fontColor);
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.fieldset__send--url{
+    font-size: 1.2rem;
+    color: var(--orangeMain);
+    padding-bottom: 1rem;
+ 
+}
+.fieldset__send--bnt{
+    width: 18.1rem;
+    height: 3rem;
+    font-family: var(--mainFont);
+    background-color: #00a0f5;
+    color: #ffffff;
+    line-height: 2;
+    border: 1px solid #00a0f5;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap:0.95rem
+}
+
+.fa-twitter{
+    font-size: 1.8rem;
+}
+
+
 
 
 
