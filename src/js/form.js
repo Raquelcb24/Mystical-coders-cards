@@ -5,10 +5,10 @@ const previewEmail = document.querySelector(".js_email");
 const previewPhone = document.querySelector(".js_phone");
 const previewLinkedin = document.querySelector(".js_linkedin");
 const previewGithub = document.querySelector(".js_github");
-const previewColorRed = document.querySelector(".js_red");
+//const previewColorRed = document.querySelector(".js_red");
 const previewCard = document.querySelector(".js_preview-card");
 const btnReset = document.querySelector(".js_button-reset");
-
+const palette = document.querySelector(".js_radio__check");
 
 const data = {
   palette: "",
@@ -80,12 +80,17 @@ function handleReset(event){
   previewCard.classList.remove("palette3");
   previewCard.classList.remove("palette2");
 
+  
+
   for (const input of inputs) {
+
       input.value = '';
       data[input.id] = '';
+      
       previewName.innerHTML = 'Nombre Apellido';
-      previewJob.innerHTML = 'Frontend developer';
+      previewJob.innerHTML = 'Front-end developer';
     }
+    palette.checked=true;
     console.log(data);
   };
  
