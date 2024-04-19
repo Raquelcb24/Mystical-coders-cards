@@ -5,7 +5,6 @@ const previewEmail = document.querySelector(".js_email");
 const previewPhone = document.querySelector(".js_phone");
 const previewLinkedin = document.querySelector(".js_linkedin");
 const previewGithub = document.querySelector(".js_github");
-//const previewColorRed = document.querySelector(".js_red");
 const previewCard = document.querySelector(".js_preview-card");
 const btnReset = document.querySelector(".js_button-reset");
 const palette = document.querySelector(".js_radio__check");
@@ -79,7 +78,8 @@ function handleReset(event){
   previewCard.classList.add("palette1");
   previewCard.classList.remove("palette3");
   previewCard.classList.remove("palette2");
-
+ 
+ 
   
 
   for (const input of inputs) {

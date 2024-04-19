@@ -123,6 +123,10 @@
     border-bottom: 0.2rem solid #d8d8d8;
     padding-bottom: 1rem;
 }
+.fill__modifier{
+    display: flex;
+    flex-direction: column;
+}
 
 .form__label{
     font-size: 1.4rem;
@@ -262,13 +266,16 @@
    justify-content: center;
    align-items: center;
    gap:0.95rem
+
 }
 
 .fa-twitter{
     font-size: 1.8rem;
 }
 
-
+.hidden{
+    display: none;
+}
 
 
 
