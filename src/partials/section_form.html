@@ -16,13 +16,13 @@
                         <div class="radio__option">
                                 <input 
                                 type="radio" 
-                                id="palette" 
+                                id="palette1" 
                                 name="palette"
                                 class="radio__check js_radio__check "
                                 value="1"
                                 checked
                                 />
-                                <label >
+                                <label for="palette1">
                                     <div class="color">
                                         <div class="box color__deep--green"></div>
                                         <div class="box color__medium--green" ></div>
@@ -34,12 +34,12 @@
                         <div class="radio__option">
                             <input 
                             type="radio" 
-                            id="palette" 
+                            id="palette2" 
                             name="palette"
                             class="radio__check "
                             value="2"
                             />
-                            <label >
+                            <label for="palette2">
                                 <div class="color">
                                     <div class="box color__deep--red"></div>
                                     <div class="box color__medium--red" ></div>
@@ -51,12 +51,12 @@
                         <div class="radio__option">
                                 <input 
                                 type="radio" 
-                                id="palette" 
+                                id="palette3" 
                                 name="palette"
                                 class="radio__check"
                                 value="3"
                                 />
-                                <label >
+                                <label for="palette3">
                                     <div  class="color">
                                         <div class="box color__deep--grey"></div>
                                         <div class="box color__yellow" ></div>
@@ -69,7 +69,7 @@
         </fieldset>
             
 
-        <fieldset class="form__fieldset--fill js-fill js_parent  ">
+        <fieldset class="form__fieldset--fill js-fill js_parent js-collapsable">
             <legend class="form__fieldset--title js_collapsable ">
                 <div class="caret__postion">
                     <div>
@@ -151,7 +151,7 @@
         </div>
         </fieldset>
 
-        <fieldset class="form__fieldset--share js_parent ">
+        <fieldset class="form__fieldset--share js_parent js-collapsable">
             <legend class="form__fieldset--title js_collapsable ">
                 <div class="caret__postion">
                     <div>
@@ -165,16 +165,21 @@
             value="CREAR TARJETA"
             id="shareButton"
             name="shareButton"
-            class="share__button js-collapsable-content">
+            class="share__button js-collapsable-content js-create-card">
         </fieldset>
-        <fieldset class="form__fieldset--send hidden">
+        <fieldset class="form__fieldset--send hidden js-twitterLink">
             <legend class="fieldset__send--title">La tarjeta ha sido creada:</legend>
-            <span class="fieldset__send--url">aqui irán las url que se generen que tendrán un hidden</span>
+            <span class="fieldset__send--url"></span>
 
-            <button type="button" name="sendBtn" id="sendBtn" class="fieldset__send--bnt">
+            <a class="twitter-share-button fieldset__send--bnt" href="https://twitter.com/intent/tweet" target="_blank">
                 <i class="fab fa-twitter"></i>
                 Compartir en Twitter
-              </button>
+            </a>
+
+            <!-- <button type="button" name="sendBtn" id="sendBtn" class="fieldset__send--bnt">
+                <i class="fab fa-twitter"></i>
+                Compartir en Twitter
+              </button> -->
               
 
         </fieldset>
