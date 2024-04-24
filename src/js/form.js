@@ -12,7 +12,7 @@ const createCard = document.querySelector(".js-create-card");
 const btnShare = document.querySelector(".js-twitterLink");
 
 const data = {
-  palette: "",
+  palette: "1",
   name: "",
   job: "",
   phone: "",
@@ -30,7 +30,7 @@ const handleForm = (event) => {
   const nameInput = event.target.name; //name del input
   console.log("working input");
 
-  data[input] = valueInput;
+  data[nameInput] = valueInput;
 
   if (input === "name") {
     // data.completeName = valueInput;

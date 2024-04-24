@@ -136,8 +136,8 @@
             type="text"
             id="linkedin"
             name="linkedin"
-            pattern="/^https?:\/\/(www\.)?linkedin\.com\/(in|pub)\/[a-zA-Z0-9_-]+\/?$/"
-            placeholder="Ej. linkedin.com/in/sally.hill"
+  
+            placeholder="Ej. /sally.hill"
             class="form__input js_form-linkedin">
 
             <label for="github" class="form__label">GitHub</label>
@@ -145,8 +145,8 @@
             type="text"
             id="github"
             name="github"
-            pattern="/^https?:\/\/(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?$/"
-            placeholder="Ej.github.com/sallyhill"
+         
+            placeholder="Ej. /sallyhill"
             class="form__input js_form-github">
         </div>
         </fieldset>
@@ -169,17 +169,16 @@
         </fieldset>
         <fieldset class="form__fieldset--send hidden js-twitterLink">
             <legend class="fieldset__send--title">La tarjeta ha sido creada:</legend>
-            <span class="fieldset__send--url"></span>
+            <a class="fieldset__send--url js-share-link" target="_blank"></a>
 
-            <a class="twitter-share-button fieldset__send--bnt" href="https://twitter.com/intent/tweet" target="_blank">
+            <a class="twitter-share-button fieldset__send--bnt js-share-twitter" href="https://twitter.com/intent/tweet" target="_blank">
                 <i class="fab fa-twitter"></i>
                 Compartir en Twitter
             </a>
 
-            <!-- <button type="button" name="sendBtn" id="sendBtn" class="fieldset__send--bnt">
-                <i class="fab fa-twitter"></i>
-                Compartir en Twitter
-              </button> -->
+            <div>
+                <p class="js-error hidden"></p>
+            </div>
               
 
         </fieldset>
