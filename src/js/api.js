@@ -20,6 +20,9 @@ const handleCreateCard = (event)=>{
             btnShare.classList.remove('hidden');
             url.innerHTML = dataResponse.cardURL;
             url.href = dataResponse.cardURL;
+            const tweetText = encodeURIComponent('¡Mira mi tarjeta creada con esta increíble aplicación!');
+            const twitterShareURL = `https://twitter.com/intent/tweet?text=${tweetText}&url=${dataResponse.cardURL}`;
+            shareTwitter.href = twitterShareURL;
          }
          else {
             shareErrorContainer.classList.remove('hidden');
