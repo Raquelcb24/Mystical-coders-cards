@@ -8,6 +8,8 @@ const previewGithub = document.querySelector(".js_github");
 const previewCard = document.querySelector(".js_preview-card");
 const btnReset = document.querySelector(".js_button-reset");
 const palette = document.querySelector(".js_radio__check");
+const createCard = document.querySelector(".js-create-card");
+const btnShare = document.querySelector(".js-twitterLink");
 
 const data = {
   palette: "",
@@ -25,6 +27,7 @@ const handleForm = (event) => {
   event.preventDefault();
   const input = event.target.id; //obtener id del input
   const valueInput = event.target.value; //obtener valor input
+  const nameInput = event.target.name; //name del input
   console.log("working input");
 
   data[input] = valueInput;
@@ -47,7 +50,7 @@ const handleForm = (event) => {
   } else if (input === "github") {
     // data.github = valueInput;
     previewGithub.href = valueInput;
-  } else if (input === "palette") {
+  } else if (nameInput === "palette") {
     if (valueInput === "2") {
       previewCard.classList.add("palette2");
       previewCard.classList.remove("palette1");
@@ -70,6 +73,16 @@ const handleForm = (event) => {
 
 form.addEventListener("input", handleForm);
 
+//Boton crear tarjeta
+
+const handleCreate = (event)=>{
+  event.preventDefault();
+  btnShare.classList.remove('hidden');
+};
+createCard.addEventListener('click', handleCreate);
+
+
+
 function handleReset(event){
 
   event.preventDefault();
@@ -78,9 +91,8 @@ function handleReset(event){
   previewCard.classList.add("palette1");
   previewCard.classList.remove("palette3");
   previewCard.classList.remove("palette2");
+  btnShare.classList.add('hidden');
  
- 
-  
 
   for (const input of inputs) {
 
@@ -88,6 +100,8 @@ function handleReset(event){
       data[input.id] = '';
       previewName.innerHTML = 'Nombre Apellido';
       previewJob.innerHTML = 'Front-end developer';
+      profileImage.style.backgroundImage = ``;
+      profilePreview.style.backgroundImage = `url(../images/profile.jpg)`;
     }
     palette.checked=true;
     console.log(data);
