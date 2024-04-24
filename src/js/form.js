@@ -86,7 +86,6 @@ function handleReset(event){
 
       input.value = '';
       data[input.id] = '';
-      
       previewName.innerHTML = 'Nombre Apellido';
       previewJob.innerHTML = 'Front-end developer';
     }
