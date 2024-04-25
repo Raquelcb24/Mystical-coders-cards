@@ -35,7 +35,5 @@ const handleCreateCard = (event)=>{
 
 createCard.addEventListener('click', handleCreateCard)
 
-//Esto no funciona, funciona dentro del segundo then pero no podemos ponerlo fuera para usarlo con otro boton 
 
-window.open(`https://twitter.com/share?text=${dataResponse.tweetText}&url=${dataResponse.cardURL}`, 'shareTwitterWindow');
 
