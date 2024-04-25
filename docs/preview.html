@@ -33,7 +33,7 @@
 
     <title>Document</title>
     
-    <link rel="stylesheet" href="./assets/main-20efedca.css">
+    <link rel="stylesheet" href="./assets/main-18077394.css">
   </head>
   <body>
     <header class="header">
@@ -96,27 +96,28 @@
         <section class="form__section">
     <form class="form js_form">
 
-        <fieldset class="form__fieldset--design">
-            <legend class="form__fieldset--title">
+        <fieldset class="form__fieldset--design js_parent ">
+            <legend class="form__fieldset--title js_collapsable ">
                 <div class="caret__postion">
                   <div>
                     <i class="fas fa-object-ungroup" style="color: #e17334;"></i>DISEÑA</legend>
                   </div>
-                  <i class="fa-solid fa-caret-up"></i>
+                  <i class="fa-solid fa-caret-up js_ico"></i>
                </div>
             
-            <div class="design">
-                <label class="design__title">COLORES</label>
+            <div class="design js-collapsable-content">
+                <label  class="design__title">COLORES</label>
                 <div class="design__options">
                         <div class="radio__option">
                                 <input 
                                 type="radio" 
-                                id="palette" 
+                                id="palette1" 
                                 name="palette"
-                                class="radio__check"
+                                class="radio__check js_radio__check "
                                 value="1"
+                                checked
                                 />
-                                <label for="greenPalette">
+                                <label for="palette1">
                                     <div class="color">
                                         <div class="box color__deep--green"></div>
                                         <div class="box color__medium--green" ></div>
@@ -128,12 +129,12 @@
                         <div class="radio__option">
                             <input 
                             type="radio" 
-                            id="palette" 
+                            id="palette2" 
                             name="palette"
-                            class="radio__check js_red"
+                            class="radio__check "
                             value="2"
                             />
-                            <label for="redPalette">
+                            <label for="palette2">
                                 <div class="color">
                                     <div class="box color__deep--red"></div>
                                     <div class="box color__medium--red" ></div>
@@ -145,13 +146,13 @@
                         <div class="radio__option">
                                 <input 
                                 type="radio" 
-                                id="palette" 
+                                id="palette3" 
                                 name="palette"
                                 class="radio__check"
                                 value="3"
                                 />
-                                <label for="yellowPalete">
-                                    <div class="color">
+                                <label for="palette3">
+                                    <div  class="color">
                                         <div class="box color__deep--grey"></div>
                                         <div class="box color__yellow" ></div>
                                         <div class="box color__light--grey"></div>
@@ -163,16 +164,16 @@
         </fieldset>
             
 
-        <fieldset class="form__fieldset--fill js-fill">
-            <legend class="form__fieldset--title">
+        <fieldset class="form__fieldset--fill js-fill js_parent js-collapsable">
+            <legend class="form__fieldset--title js_collapsable ">
                 <div class="caret__postion">
                     <div>
                       <i class="fa-solid fa-keyboard" style="color: #e17334;"></i>RELLENA</legend>
                     </div>
-                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-up js_ico"></i>
                  </div>
             </legend>
-
+            <div class="js-collapsable-content fill__modifier">
             <label for="completeName" class="form__label ">Nombre completo</label>
             <input 
             type="text"
@@ -230,8 +231,8 @@
             type="text"
             id="linkedin"
             name="linkedin"
-            pattern="/^https?:\/\/(www\.)?linkedin\.com\/(in|pub)\/[a-zA-Z0-9_-]+\/?$/"
-            placeholder="Ej. linkedin.com/in/sally.hill"
+  
+            placeholder="Ej. /sally.hill"
             class="form__input js_form-linkedin">
 
             <label for="github" class="form__label">GitHub</label>
@@ -239,19 +240,19 @@
             type="text"
             id="github"
             name="github"
-            pattern="/^https?:\/\/(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?$/"
-            placeholder="Ej.github.com/sallyhill"
+         
+            placeholder="Ej. /sallyhill"
             class="form__input js_form-github">
-
+        </div>
         </fieldset>
 
-        <fieldset class="form__fieldset--share">
-            <legend class="form__fieldset--title">
+        <fieldset class="form__fieldset--share js_parent js-collapsable">
+            <legend class="form__fieldset--title js_collapsable ">
                 <div class="caret__postion">
                     <div>
                       <i class="fa-solid fa-share-nodes" style="color: #e17334;"></i>COMPARTE</legend>
                     </div>
-                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-up js_ico"></i>
                  </div>
             </legend>
             <input 
@@ -259,7 +260,22 @@
             value="CREAR TARJETA"
             id="shareButton"
             name="shareButton"
-            class="share__button">
+            class="share__button js-collapsable-content js-create-card">
+        </fieldset>
+        <fieldset class="form__fieldset--send hidden js-twitterLink">
+            <legend class="fieldset__send--title">La tarjeta ha sido creada:</legend>
+            <a class="fieldset__send--url js-share-link" target="_blank"></a>
+
+            <a class="twitter-share-button fieldset__send--bnt js-share-twitter" href="https://twitter.com/intent/tweet" target="_blank">
+                <i class="fab fa-twitter"></i>
+                Compartir en Twitter
+            </a>
+
+            <div>
+                <p class="js-error hidden"></p>
+            </div>
+              
+
         </fieldset>
 
     </form>
