@@ -10,6 +10,8 @@ const btnReset = document.querySelector(".js_button-reset");
 const palette = document.querySelector(".js_radio__check");
 const createCard = document.querySelector(".js-create-card");
 const btnShare = document.querySelector(".js-twitterLink");
+const errorEmail = document.querySelector(".js-form-validation-email");
+const errorTlf = document.querySelector(".js-form-validation-tlf");
 
 const data = {
   palette: "1",
@@ -25,6 +27,13 @@ const data = {
 
 const handleForm = (event) => {
   event.preventDefault();
+
+  // const userDataLocal = JSON.parse(localStorage.getItem(userData));
+  // if(userDataLocal !== null){
+  //     userData = userDataLocal;
+
+  // };
+
   const input = event.target.id; //obtener id del input
   const valueInput = event.target.value; //obtener valor input
   const nameInput = event.target.name; //name del input
@@ -33,22 +42,28 @@ const handleForm = (event) => {
   data[nameInput] = valueInput;
 
   if (input === "name") {
-    // data.completeName = valueInput;
     previewName.innerHTML = valueInput;
   } else if (input === "job") {
-    // data.position = valueInput;
     previewJob.innerHTML = valueInput;
   } else if (input === "email") {
-    // data.email = valueInput;
-    previewEmail.href = "mailto:" + valueInput;
+    const emailPattern = /^[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7}$/;
+    if (!valueInput.match(emailPattern)){
+      errorEmail.classList.remove('hidden');
+    } else {
+      errorEmail.classList.add('hidden');
+      previewEmail.href = "mailto:" + valueInput;
+    };
   } else if (input === "phone") {
-    // data.phoneNumber = valueInput;
-    previewPhone.href = "tel:" + valueInput;
+    const phonePattern = /^(\+?\d{1,3})?[-. ]?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
+    if (!valueInput.match(phonePattern)){
+      errorTlf.classList.remove('hidden');
+    } else {
+      errorTlf.classList.add('hidden');
+      previewPhone.href = "tel:" + valueInput;
+    };
   } else if (input === "linkedin") {
-    // data.linkedin = valueInput;
     previewLinkedin.href = valueInput;
   } else if (input === "github") {
-    // data.github = valueInput;
     previewGithub.href = valueInput;
   } else if (nameInput === "palette") {
     if (valueInput === "2") {
@@ -69,6 +84,8 @@ const handleForm = (event) => {
     }
 
   console.log(data);
+
+  localStorage.setItem('userData', JSON.stringify(data));
 };
 
 form.addEventListener("input", handleForm);
@@ -78,9 +95,9 @@ form.addEventListener("input", handleForm);
 const handleCreate = (event)=>{
   event.preventDefault();
   btnShare.classList.remove('hidden');
+  createCard.classList.add('btn-off');
 };
 createCard.addEventListener('click', handleCreate);
-
 
 
 function handleReset(event){
@@ -109,8 +126,9 @@ function handleReset(event){
  
 btnReset.addEventListener('click', handleReset);
 
-
-
+function init(){
+  
+};
 
 
 

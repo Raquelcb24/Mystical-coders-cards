@@ -224,6 +224,13 @@
     padding-left: 3.35rem; /* Espacio adicional para el icono */
 }
 
+.btn-off{
+    background-color: #d5d5d5;
+    color: white;
+    border: 1rem solid #d5d5d5;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+
 .fa-share-nodes{
     padding-right: 1rem;
 }
@@ -278,5 +285,9 @@
     display: none;
 }
 
-
+.form__validation{
+    color: rgb(207, 3, 3);
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
 
