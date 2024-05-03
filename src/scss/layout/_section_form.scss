@@ -222,7 +222,13 @@
     background-position: left center; /* Alinea el icono a la izquierda */
     background-size: 2.5rem; /* Tamaño del icono */
     padding-left: 3.35rem; /* Espacio adicional para el icono */
+    cursor:pointer;
 }
+
+.mandatory{
+    margin-top: 0.5rem;
+}
+
 
 .btn-off{
     background-color: #d5d5d5;

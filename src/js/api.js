@@ -26,7 +26,7 @@ const handleCreateCard = (event)=>{
          }
          else {
             shareErrorContainer.classList.remove('hidden');
-            shareErrorContainer.innerHTML = dataResponse.error;
+            shareErrorContainer.innerHTML = `Asegúrate de haber rellenado todos los campos`;
          }
 
     })

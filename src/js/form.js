@@ -118,7 +118,7 @@ function handleReset(event){
       previewName.innerHTML = 'Nombre Apellido';
       previewJob.innerHTML = 'Front-end developer';
       profileImage.style.backgroundImage = ``;
-      profilePreview.style.backgroundImage = `url(../images/profile.jpg)`;
+      profilePreview.style.backgroundImage = `url(../images/profile2.jpg)`;
     }
     palette.checked=true;
     console.log(data);
