@@ -1,0 +1,38 @@
+.main{
+    background-image: linear-gradient(to bottom,( #f5f5f5), (#ffffff));
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+       
+        &__preview{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-color:linear-gradient(to bottom, var(--landingBackground), white 9%);
+           
+        }
+        &__form{
+            grid-column: 1/2;
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+ 
+        .main__preview{
+            
+            margin-top: 2rem;
+            margin-right: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+
+

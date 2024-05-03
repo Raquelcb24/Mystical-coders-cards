@@ -1,0 +1,299 @@
+.form__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* background-color: linear-gradient(to bottom, var(--landingBackground), white 9%); */
+    font-family: var(--mainFont);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @media screen and (min-width:768px){
+       width: 50vw;
+       align-items: stretch;
+       padding-right: 3rem;
+       padding-left: 4rem;
+
+    }@media screen and (min-width:1024px){
+        width: 40vw;
+     }
+}
+.form__fieldset--design{
+    margin-top: 2.7rem;
+    padding-bottom: 3rem;
+    border-bottom: 0.2rem solid #d8d8d8;
+    color: var(--fontColor); 
+    width: 100%;
+    @media screen and (min-width: 768px){
+        width: 100%;
+    }
+
+}
+.form__fieldset--title{
+    /*width: calc(100vw - 4rem);*/
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    color: var(--fontColor);
+    width: 100%;
+    @media screen and (min-width: 768px){
+        width: 100%;
+    }
+}
+
+.fa-object-ungroup{
+    padding-right: 1rem;
+}
+.fa-caret-up{
+    font-size: 1.8rem;
+    color: #54585a;
+    text-align: right;
+}
+
+.caret__postion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2.5rem;
+
+}
+.design{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* @media screen and (min-width:768px){
+        grid-template-columns: 1fr;
+    } */
+    &__title{
+        font-size: 1.4rem;
+        padding-left: 1rem;
+        font-weight: 400;
+    }
+    &__options{
+        display: grid;
+        gap: 2rem;
+        justify-items: end;
+    }
+}
+.radio__option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.radio__check{
+    width: 1.7rem;
+    height: 1.7rem;
+    color: #c5c5c5;
+}
+.color{
+    display: flex;
+    flex-direction: row;
+
+    &__deep--green{
+        background-color:#114e4e;
+    }
+    &__medium--green{
+        background-color:#438792;
+    }
+    &__light--green{
+        background-color:#a2deaf;
+    }
+    &__deep--red{
+        background-color:#420101 ;
+    }
+    &__medium--red{
+        background-color:#bd1010 ;
+    }
+    &__light--red{
+        background-color:#e95626;
+    }
+    &__deep--grey{
+        background-color:#3e5b65;
+    }
+    &__yellow{
+        background-color:#eab052;
+    }
+    &__light--grey{
+        background-color:#a0c0cf;
+    }
+}
+
+.form__fieldset--fill{
+    border-bottom: 0.2rem solid #d8d8d8;
+    padding-bottom: 1rem;
+}
+.fill__modifier{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-bottom: 0.7rem;
+    color: #114e4e;
+}
+
+.form__input{
+    appearance: none;
+    border: 0.1rem solid #a2deaf;
+    height: 3rem;
+    margin-bottom: 2rem;
+    font-family: var(--mainFont);
+    font-size: 1.4rem;
+    &::placeholder{
+        color: #c5c5c5;
+        opacity: 80%
+    }
+}
+
+.fa-keyboard{
+    padding-right: 1rem;
+}
+
+.box{
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.form__fieldset--fill{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.image__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.7rem;
+
+}
+.image__add{
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: var(--mainFont);
+    text-align: center;
+    padding-top: 0.3rem;
+    background-color: var(--orangeMain);
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--orangeMain);
+    color: white;
+
+  }
+
+.image__button{
+    display: none;
+    
+
+}
+.image__check{
+    width: 3rem;
+    height: 3rem;
+    border: 0.1rem solid #a2deaf; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.form__fieldset--share{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.2rem solid #d8d8d8;
+    margin-bottom: 2rem;
+}
+
+.share__button {
+    width: 19.9rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    background-color: var(--orangeMain);
+    color: white;
+    border: 1rem solid var(--orangeMain);
+    border-radius: 1.2rem;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"%3E%3Cpath fill="%23ffffff" d="M528 160V416c0 8.8-7.2 16-16 16H320c0-44.2-35.8-80-80-80H176c-44.2 0-80 35.8-80 80H64c-8.8 0-16-7.2-16-16V160H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM272 256a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm104-48c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: left center; /* Alinea el icono a la izquierda */
+    background-size: 2.5rem; /* Tamaño del icono */
+    padding-left: 3.35rem; /* Espacio adicional para el icono */
+    cursor:pointer;
+}
+
+.mandatory{
+    margin-top: 0.5rem;
+}
+
+
+.btn-off{
+    background-color: #d5d5d5;
+    color: white;
+    border: 1rem solid #d5d5d5;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+
+.fa-share-nodes{
+    padding-right: 1rem;
+}
+
+.form__fieldset--send{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.1rem solid #d8d8d8;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fieldset__send--title{
+    color: var(--fontColor);
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.fieldset__send--url{
+    font-size: 1.2rem;
+    color: var(--orangeMain);
+    padding-bottom: 1rem;
+ 
+}
+.fieldset__send--bnt{
+    text-decoration: none;
+    width: 18.1rem;
+    height: 3rem;
+    font-family: var(--mainFont);
+    background-color: #00a0f5;
+    color: #ffffff;
+    line-height: 2;
+    border: 1px solid #00a0f5;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:0.95rem
+
+}
+
+.fa-twitter{
+    font-size: 1.8rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.form__validation{
+    color: rgb(207, 3, 3);
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+

@@ -1,5 +1,6 @@
-@import "core/variables";
-@import "core/reset";
+@import 'core/reset';
+@import 'core/variables';
+
 
 @import "layout/main_landing";
 @import "layout/footer";
@@ -7,5 +8,6 @@
 @import "layout/header";
 @import "layout/main_preview";
 
-@import "layout/section_preview";
-@import "layout/section_form";
+@import 'layout/collaps';
+
+
