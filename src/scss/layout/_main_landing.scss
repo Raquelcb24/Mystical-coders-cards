@@ -19,7 +19,7 @@
     }
 
     &__logo{
-        width: 25rem;
+        width: 20rem;
         padding-bottom: 3.5rem;
 
         @media screen and (width > 768px) {
@@ -48,7 +48,7 @@
         &--paragraph{
             font-family: 'OpenSans', sans-serif;
             font-size: 1.28rem;
-            color: #114e4e;
+            color: #7675b6;
             max-width: 26rem;
             text-align: center;
             line-height: normal;
@@ -61,7 +61,7 @@
     }
 
     &__icons{
-        border: 0.16rem solid rgba(225, 115, 52, 0.21);
+        border: 0.16rem solid #f0c7bc;
         border-radius: 0.4rem;
         width: 26.8rem;
         height: 7.38rem;
@@ -118,7 +118,7 @@
     &__btn{
         margin-top: 3.86rem;
         text-decoration: none;
-        background-color: #438792;
+        background-color: #90aad8;
         width: 12.9rem;
         height: 4.2rem;
         border-radius: 2.1rem;

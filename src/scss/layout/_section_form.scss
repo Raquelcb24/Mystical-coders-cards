@@ -137,7 +137,7 @@
 
 .form__input{
     appearance: none;
-    border: 0.1rem solid #a2deaf;
+    border: 0.1rem solid #f8b2b1;
     height: 3rem;
     margin-bottom: 2rem;
     font-family: var(--mainFont);
@@ -226,7 +226,8 @@
 }
 
 .mandatory{
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
+    color: #dd0ad8;
 }
 
 
@@ -260,8 +261,9 @@
 
 .fieldset__send--url{
     font-size: 1.2rem;
-    color: var(--orangeMain);
-    padding-bottom: 1rem;
+    color: #dd0ad8;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
  
 }
 .fieldset__send--bnt{

@@ -20,7 +20,7 @@ const handleCreateCard = (event)=>{
             btnShare.classList.remove('hidden');
             url.innerHTML = dataResponse.cardURL;
             url.href = dataResponse.cardURL;
-            const tweetText = encodeURIComponent('¡Mira mi tarjeta creada con esta increíble aplicación!');
+            const tweetText = encodeURIComponent('¡He creado mi nueva tarjeta de contacto con MystiCards by Mystical Coders!');
             const twitterShareURL = `https://twitter.com/intent/tweet?text=${tweetText}&url=${dataResponse.cardURL}`;
             shareTwitter.href = twitterShareURL;
          }
