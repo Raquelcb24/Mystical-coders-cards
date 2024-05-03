@@ -132,6 +132,7 @@ const profilePreview = document.querySelector('.js__profile-preview');
   const formDataString = localStorage.getItem('userData');
   if(formDataString !==null){
     const formData = JSON.parse(formDataString);
+    previewCard.classList.add(`palette${formData.palette}`);
     previewName.innerHTML = formData.name;
     previewJob.innerHTML = formData.job;
     previewEmail.href = `mailto:${formData.email}`;
@@ -145,8 +146,6 @@ const profilePreview = document.querySelector('.js__profile-preview');
 
    /*  profilePreview.style.backgroundImage = `url(${data.photo})`; */
  /*   profileImage.style.backgroundImage = data.photo; */
-  }else{
-    handleForm();
   }
 
 
