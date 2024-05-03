@@ -2,15 +2,11 @@
 
 :root {
   //Colores
-  --landingBackground: #f5f5f5;
-  --orangeMain: #e17334;
-  --fontColor: #54585a;
+  $landingBackgroud: #f5f5f5;
+  $orangeMain: #e17334;
+  $colortextfooter: #d8d8d8;
 
   //Fuentes
-  --mainFont: "Open Sans", sans-serif;
-  --previewFont: "Montserrat", sans-serif;
-}
-
-html{
-  font-size: 62.5%;
+  $mainFont: "Open Sans", sans-serif;
+  $previewFont: "Montserrat", sans-serif;
 }
