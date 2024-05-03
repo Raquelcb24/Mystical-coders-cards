@@ -118,7 +118,7 @@ function handleReset(event){
       previewName.innerHTML = 'Nombre Apellido';
       previewJob.innerHTML = 'Front-end developer';
       profileImage.style.backgroundImage = ``;
-      profilePreview.style.backgroundImage = `url(../images/profile.jpg)`;
+      profilePreview.style.backgroundImage = `url(./images/profile2.jpg)`;
     }
     palette.checked=true;
     console.log(data);
@@ -127,8 +127,30 @@ function handleReset(event){
 btnReset.addEventListener('click', handleReset);
 
 function init(){
+  const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
+  const formDataString = localStorage.getItem('userData');
+  if(formDataString !==null){
+    const formData = JSON.parse(formDataString);
+    previewCard.classList.add(`palette${formData.palette}`);
+    previewName.innerHTML = formData.name;
+    previewJob.innerHTML = formData.job;
+    previewEmail.href = `mailto:${formData.email}`;
+    previewPhone.href = `tel:${formData.phone}`;
+    previewLinkedin.href = `https://www.linkedin.com/in/${formData.linkedin}`;
+    previewGithub.href = `https://github.com/${formData.github}`;
+   
+    profileImage.style.backgroundImage = `url(${formData.photo})`;
+    profilePreview.style.backgroundImage = `url(${formData.photo})`;
   
+
+   /*  profilePreview.style.backgroundImage = `url(${data.photo})`; */
+ /*   profileImage.style.backgroundImage = data.photo; */
+  }
+
+
 };
 
+init()
 
 
